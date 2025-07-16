@@ -23,7 +23,7 @@ const App = () => {
     <SectionSix/>
     <SectionSeven/>
     <Footer/>
-    <h1>This is app.jsx</h1>
+  
     </>
   )
 }
