@@ -7,3 +7,5 @@ This project was built as part of an assignment given by DevelUp.
 - HTML5  
 - CSS3 /  Bootstrap  
 - JavaScript / React   
+
+Hosted Link : https://develup-assignment.vercel.app/
