@@ -1,0 +1,1087 @@
+/* @import url('https://fonts.googleapis.com/css2?family=Sora:wght@100..800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap'); */
+
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Sora:wght@100..800&display=swap');
+body {
+    font-family: Sora;
+}
+
+
+/* Header CSS Starts Here */
+
+.du-header {
+    min-height: 80px;
+    font-family: Sora;
+    padding: 12px 0px;
+    border: 1px solid rgba(229, 231, 235, 1);
+    box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.05);
+}
+
+.du-header .logo {
+    margin-right: 24px;
+}
+
+.du-header .navbar-expand-lg {
+    padding: 0;
+}
+
+.du-header .navbar-expand-lg .navbar-nav .nav-link {
+    padding-left: 12px;
+    padding-right: 12px;
+}
+
+.du-header a {
+    font-weight: 600;
+    font-style: SemiBold;
+    font-size: 15px;
+    line-height: 20px;
+    letter-spacing: 0%;
+    text-decoration: none;
+    color: #2A2A2A
+}
+
+.du-header {
+    background-color: #FFFFFF;
+}
+
+.header-search {
+    height: 32px;
+    width: 42px;
+    border-right: 1px solid #4C496E33;
+    padding-right: 24px;
+    padding-top: 7px;
+    padding-bottom: 7px;
+}
+
+.du-header .start {
+    font-weight: 600;
+    font-style: SemiBold;
+    font-size: 15px;
+    line-height: 20px;
+    letter-spacing: 0%;
+    background: linear-gradient(rgba(131, 178, 255, 1), rgba(59, 130, 246, 1));
+    color: rgba(255, 255, 255, 1);
+    border: 0px;
+    border-radius: 16px;
+    padding: 10px 20px;
+    margin-left: 15px;
+}
+
+.du-header .navbar>.container-fluid {
+    max-width: 1280px;
+    padding: 0;
+}
+
+.du-header .navbar-text {
+    padding: 5px 0px;
+}
+
+.du-header .navbar-text a {
+    margin-left: 24px;
+}
+
+@media(max-width:991px) {
+    .du-header .navbar-text {
+        flex-direction: column;
+        display: flex;
+        gap: 10px;
+    }
+    .du-header .header-search {
+        margin-left: 12px;
+    }
+    .du-header .navbar-text a {
+        margin-left: 12px;
+    }
+    .du-header .navbar-text button {
+        margin-left: 12px;
+    }
+    .du-header .logo {
+        margin-left: 12px;
+    }
+    .du-header .navbar-toggler {
+        margin-right: 12px;
+    }
+}
+
+
+/* Header CSS Ends Here */
+
+
+/* Banner CSS */
+
+.du-banner {
+    background: linear-gradient(90deg, #EEF2FF 0%, #FFFFFF 50%, #FAF5FF 100%);
+    padding: 64px 0px;
+    display: flex;
+    justify-content: center;
+    font-family: Sora;
+}
+
+.du-banner .rowBanner {
+    display: flex;
+    justify-content: space-between;
+    gap: 200px;
+}
+
+.du-banner .toggleBar a {
+    text-decoration: none;
+    font-family: Sora;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 0%;
+    text-align: center;
+    color: rgba(0, 0, 0, 1);
+}
+
+.du-banner .toggleBar a:first-child {
+    background-color: rgba(99, 157, 251, 1);
+}
+
+.du-banner .toggleBar a {
+    background-color: (108, 157, 255, 0.1);
+    padding: 10px 20px;
+    border-radius: 16px;
+}
+
+.du-banner .toggleBar {
+    background-color: rgba(108, 157, 255, 0.1);
+    border-radius: 16px;
+    padding: 10px 20px;
+    padding-bottom: 10px;
+    margin-bottom: 30px;
+    display: inline-block;
+}
+
+.du-banner .toggleBar span {
+    margin-left: 8px;
+}
+
+.du-banner .banner-one-main {
+    padding-bottom: 40px;
+}
+
+.du-banner .banner-one-main h1 {
+    font-family: Sora;
+    font-weight: 700;
+    font-style: Bold;
+    font-size: 96px;
+    line-height: 110px;
+    letter-spacing: 0%;
+}
+
+.du-banner .banner-one-main span {
+    color: rgba(99, 157, 251, 1);
+    ;
+}
+
+.du-banner .banner-one-main h4 {
+    font-family: Sora;
+    font-weight: 400;
+    font-style: Regular;
+    font-size: 24px;
+    line-height: 24px;
+    letter-spacing: 0%;
+}
+
+.du-banner .searchBar input {
+    border: 0;
+    padding: 12px 0px;
+    font-size: 16px;
+    background-color: rgba(255, 255, 255, 0.59);
+    border-right: 1px solid rgba(76, 73, 110, 0.2);
+    padding-right: 13px;
+    max-width: 135px;
+    margin-left: 8px;
+}
+
+.du-banner .searchBar input::placeholder {
+    color: rgba(173, 174, 188, 1);
+}
+
+.du-banner .searchBar a {
+    text-decoration: none;
+    color: rgba(173, 174, 188, 1)
+}
+
+.du-banner .searchBar {
+    background-color: rgba(255, 255, 255, 0.59);
+    padding: 17px 0px;
+}
+
+.du-banner a.findBtn {
+    background: linear-gradient(90deg, #83B2FF 0%, #3B82F6 100%);
+    color: rgba(255, 255, 255, 1);
+    padding: 10px 20px;
+    border-radius: 10px;
+    margin-left: 24.5px
+}
+
+.du-banner .searchBar img {
+    padding-left: 13px;
+}
+
+.du-banner .dropDown {
+    padding-left: 13px;
+}
+
+.du-banner .col-md-6.first-sec {
+    padding-right: 0px;
+}
+
+.du-banner .col-md-6.second-sec {
+    width: auto;
+    flex: unset;
+}
+
+.du-banner .col-md-6.second-sec img {
+    width: 100%;
+    height: auto;
+}
+
+@media(max-width:991px) {
+    .du-banner .rowBanner {
+        flex-direction: column;
+    }
+    .du-banner .toggleBar {
+        display: flex;
+    }
+    .du-banner .searchBar>div {
+        display: flex;
+        align-items: center;
+    }
+}
+
+@media(max-width:767px) {
+    .du-banner .col-md-6.first-sec {
+        display: flex;
+        flex-direction: column;
+    }
+    .du-banner .toggleBar {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+    .du-banner .banner-one-main {
+        text-align: center;
+    }
+    .du-banner .banner-one-main h1 {
+        font-size: 54px;
+    }
+    .du-banner .banner-one-main h4 {
+        font-size: 14px;
+    }
+    .du-banner .searchBar>div {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+        text-align: center;
+    }
+    .du-banner .searchBar input {
+        text-align: center;
+    }
+}
+
+
+/* SectionOne */
+
+.sectionOne {
+    font-family: Sora;
+}
+
+.sectionOne .cardItem {
+    text-align: center;
+    padding: 20px;
+}
+
+.sectionOne .cardItem img {
+    padding-bottom: 20px;
+}
+
+.sectionOne .cardItem h6 {
+    font-family: Sora;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 28px;
+    letter-spacing: 0%;
+    text-align: center;
+    color: rgba(0, 0, 0, 1);
+}
+
+.sectionOne .cardItem p {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 0%;
+    text-align: center;
+    color: rgba(75, 85, 99, 1);
+}
+
+.sectionOne .cardItem .tagPara {
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    text-align: center;
+}
+
+.sectionOne .heading {
+    font-weight: 700;
+    font-style: Bold;
+    font-size: 48px;
+    line-height: 40px;
+    letter-spacing: 0%;
+    text-align: center;
+    padding-top: 80px;
+    padding-bottom: 50px;
+}
+
+.sectionOne .heading span {
+    color: rgba(99, 157, 251, 1);
+}
+
+
+/* Section Two */
+
+.sectionTwo {
+    font-family: Inter;
+    background-color: rgba(248, 250, 252, 1);
+    padding: 60px 25px;
+}
+
+.sectionTwo .cardItem {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    background-color: rgba(255, 255, 255, 1);
+    padding: 15px;
+    border-radius: 16px;
+    box-shadow: 0px 10px 15px 0px rgba(0, 0, 0, 0.1);
+}
+
+.sectionTwo h1 {
+    font-family: Inter;
+    font-weight: 700;
+    font-style: Bold;
+    font-size: 48px;
+    line-height: 48px;
+    letter-spacing: 0%;
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+.sectionTwo p {
+    font-family: Sora;
+    font-weight: 400;
+    font-style: Regular;
+    font-size: 20px;
+    line-height: 28px;
+    letter-spacing: 0%;
+    text-align: center;
+    color: #4B5563;
+    margin-bottom: 80px;
+}
+
+.sectionTwo ul {
+    display: flex;
+    gap: 16px;
+}
+
+.sectionTwo ul li {
+    display: inline-block;
+}
+
+.sectionTwo ul li a {
+    text-decoration: none;
+    background-color: #E5E7EB;
+    color: #374151;
+    padding: 12px 24px;
+    border-radius: 24px;
+}
+
+.sectionTwo ul li:first-child a {
+    background: linear-gradient(90deg, #83B2FF 0%, #3B82F6 100%);
+    color: rgba(255, 255, 255, 1);
+}
+
+.sectionTwo .jobTitle {
+    display: flex;
+    gap: 15px;
+    margin-bottom: 15px;
+}
+
+.sectionTwo .jobTitle img {
+    height: 16px;
+    width: 30px;
+}
+
+.sectionTwo .img-parent {
+    padding: 10px 16px;
+    background: linear-gradient(90deg, #3B82F6 0%, #9333EA 100%);
+    display: inline-block;
+    border-radius: 15px;
+    align-content: center;
+}
+
+.sectionTwo h5 {
+    font-family: Inter;
+    font-weight: 700;
+    font-style: Bold;
+    font-size: 20px;
+    line-height: 28px;
+    letter-spacing: 0%;
+}
+
+.sectionTwo h6 {
+    font-family: Sora;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 0%;
+    color: rgba(75, 85, 99, 1);
+}
+
+.sectionTwo .jobList li {
+    font-family: Sora;
+    font-weight: 400;
+    font-style: Regular;
+    font-size: 14px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    padding: 6px 10px;
+    border-radius: 15px;
+}
+
+.sectionTwo .jobList {
+    padding: 0;
+}
+
+.sectionTwo .jobDetails {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+}
+
+.sectionTwo .jobDetails p {
+    font-family: Sora;
+    font-weight: 400;
+    font-style: Regular;
+    font-size: 14px;
+    line-height: 20px;
+    letter-spacing: 0%;
+    margin: 0;
+}
+
+.sectionTwo .jobBtn button {
+    background: linear-gradient(90deg, #83B2FF 0%, #3B82F6 100%);
+    border: 0;
+    color: rgba(255, 255, 255, 1);
+    font-family: Sora;
+    font-weight: 400;
+    font-style: Regular;
+    font-size: 16px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    text-align: center;
+    padding: 12px 250px;
+    border-radius: 10px;
+}
+
+.sectionTwo .menuList {
+    justify-content: center;
+    margin-bottom: 55px;
+}
+
+.sectionTwo .browseJobs {
+    font-family: Sora;
+    font-weight: 600;
+    font-style: SemiBold;
+    font-size: 16px;
+    line-height: 20px;
+    letter-spacing: 0%;
+    margin-top: 20px;
+}
+
+@media(max-width:767px) {
+    .sectionTwo .menuList {
+        flex-direction: column;
+        gap: 35px;
+    }
+    .sectionTwo .cardItem {
+        margin-bottom: 20px;
+    }
+}
+
+
+/*Section Three */
+
+.sectionThree .sec-img img {
+    width: 100%;
+    height: auto;
+}
+
+.sectionThree .sec3Content h3 span {
+    color: rgba(99, 157, 251, 1);
+}
+
+.sectionThree .sec3Content h3 {
+    font-family: Sora;
+    font-weight: 700;
+    font-style: Bold;
+    font-size: 36px;
+    line-height: 40px;
+    letter-spacing: 0%;
+    margin-bottom: 40px;
+}
+
+.sectionThree .sec3Content p {
+    font-family: Sora;
+    font-weight: 400;
+    font-style: Regular;
+    font-size: 18px;
+    line-height: 28px;
+    letter-spacing: 0%;
+    color: rgba(75, 85, 99, 1);
+    margin-bottom: 35px;
+}
+
+.sectionThree .sec3Content li {
+    font-family: Sora;
+    font-weight: 400;
+    font-style: Regular;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 0%;
+    color: rgba(0, 0, 0, 1);
+}
+
+.sectionThree .sec3Content ul {
+    padding: 0;
+    list-style: none;
+    margin-bottom: 50px;
+}
+
+.sectionThree .sec3Content li img {
+    margin-right: 12px;
+}
+
+.sectionThree .sec3Content a {
+    font-family: Sora;
+    font-weight: 400;
+    font-style: Regular;
+    font-size: 18px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    text-align: center;
+    text-decoration: none;
+    background: linear-gradient(90deg, #83B2FF 0%, #3B82F6 100%);
+    border-radius: 8px;
+    color: rgba(255, 255, 255, 1);
+    padding: 16px 30px;
+}
+
+@media(max-width:767px) {
+    .sectionThree .sec3Content {
+        padding: 0px 26px;
+        text-align: center;
+    }
+}
+
+
+/*Section Four CSS */
+
+.sectionFour {
+    background: linear-gradient(270deg, #DFF3FF 0%, #FCFBFF 100%);
+    padding: 50px 0px;
+    margin-top: 90px;
+}
+
+.sectionFour h2 {
+    font-family: Sora;
+    font-weight: 700;
+    font-style: Bold;
+    font-size: 48px;
+    line-height: 48px;
+    letter-spacing: 0%;
+    text-align: center;
+    margin-bottom: 28px;
+}
+
+.sectionFour h2 span {
+    color: rgba(99, 157, 251, 1);
+}
+
+.sectionFour p {
+    font-family: Sora;
+    font-weight: 400;
+    font-style: Regular;
+    font-size: 20px;
+    line-height: 28px;
+    letter-spacing: 0%;
+    text-align: center;
+    color: rgba(75, 85, 99, 1);
+    margin-bottom: 50px;
+}
+
+.sectionFour .list {
+    text-align: center;
+    margin-bottom: 48px;
+}
+
+.sectionFour ul {
+    display: flex;
+    padding: 0;
+    gap: 16px;
+    align-items: center;
+    justify-content: center;
+}
+
+.sectionFour ul li {
+    list-style: none;
+    font-family: Sora;
+    font-weight: 400;
+    font-style: Regular;
+    font-size: 16px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    text-align: center;
+}
+
+.sectionFour ul li:first-child {
+    background: linear-gradient(90deg, #83B2FF 0%, #3B82F6 100%);
+    padding: 16px 25px;
+    border-radius: 24px;
+}
+
+.sectionFour .headline {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+.sectionFour .headline p {
+    font-family: Sora;
+    font-weight: 400;
+    font-style: Regular;
+    font-size: 14px;
+    line-height: 20px;
+    letter-spacing: 0%;
+}
+
+.sectionFour .details h4 {
+    font-family: Sora;
+    font-weight: 700;
+    font-style: Bold;
+    font-size: 20px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    color: rgba(42, 42, 42, 1);
+    margin-bottom: 17px;
+}
+
+.sectionFour .details p {
+    font-family: Sora;
+    font-weight: 400;
+    font-style: Regular;
+    font-size: 16px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    color: rgba(141, 141, 141, 1);
+    text-align: left;
+    line-height: 1.6;
+}
+
+.sectionFour .features {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+.sectionFour .features p {
+    font-family: Sora;
+    font-weight: 400;
+    font-style: Regular;
+    font-size: 14px;
+    line-height: 20px;
+    letter-spacing: 0%;
+    text-align: left;
+    color: rgba(156, 163, 175, 1);
+}
+
+.sectionFour .enrolBtn a {
+    text-decoration: none;
+    font-family: Sora;
+    font-weight: 400;
+    font-style: Regular;
+    font-size: 16px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    text-align: center;
+    color: rgba(255, 255, 255, 1);
+    background: linear-gradient(90deg, #83B2FF 0%, #3B82F6 100%);
+    padding: 12px 114px;
+    border-radius: 8px;
+}
+
+.sectionFour .cardItem {
+    background-color: rgba(255, 255, 255, 0.7);
+    padding: 30px 20px;
+    border-radius: 16px;
+    margin-bottom: 55px;
+}
+
+.sectionFour .viewCourses p {
+    font-family: Sora;
+    font-weight: 600;
+    font-style: SemiBold;
+    font-size: 16px;
+    line-height: 20px;
+    letter-spacing: 0%;
+    margin: 0;
+}
+
+@media(max-width:1200px) {
+    .sectionFour .enrolBtn a {
+        padding: 12px 27px;
+    }
+}
+
+@media(max-width:767px) {
+    .sectionFour ul {
+        flex-direction: column;
+        gap: 30px;
+    }
+    .sectionFour .cardItem {
+        margin: 30px 0px;
+    }
+}
+
+
+/*Section Five */
+
+.sectionFive {
+    padding-top: 28px;
+    background: linear-gradient(90deg, #F3F6FF 0%, #F9FAFF 100%);
+    padding-bottom: 37px;
+    margin: 56px 0px;
+}
+
+.sectionFive h5 {
+    font-weight: 400;
+    font-style: Regular;
+    font-size: 20px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    text-align: center;
+    color: rgba(0, 0, 0, 1);
+    margin-bottom: 40px;
+}
+
+.sectionFive h5 span {
+    color: #639dfb;
+}
+
+.sectionFive .hiringOrgs {
+    display: flex;
+    gap: 59px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.sectionFive .hiringOrgs img {
+    /* 3 per row with gap */
+    height: auto;
+    width: 100%;
+}
+
+
+/*Section Six */
+
+.sectionSix {
+    padding-top: 48px;
+    padding-bottom: 48px;
+}
+
+.sectionSix .sec-container {
+    max-width: 919px;
+    margin: 0 auto;
+}
+
+.sectionSix .headings h2 {
+    font-weight: 600;
+    font-style: SemiBold;
+    font-size: 32px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    color: rgba(44, 133, 222, 1);
+    margin-top: 47px;
+    margin-bottom: 10px;
+}
+
+.sectionSix .headings p {
+    font-weight: 400;
+    font-style: Regular;
+    font-size: 16px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    color: rgba(42, 42, 42, 1);
+}
+
+.sectionSix .appDiv {
+    display: flex;
+    justify-content: space-between;
+    gap: 52px;
+}
+
+.sectionSix .appStores img {
+    margin-bottom: 16px;
+}
+
+.sectionSix .appStores img:first-child {
+    margin-top: 34px;
+}
+
+.sectionSix .divider {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.sectionSix .divider .divideLine:first-child {
+    width: 2px;
+    height: 55px;
+    background: linear-gradient(0deg, #787878 0%, rgba(222, 222, 222, 0.06) 100%);
+    ;
+}
+
+.sectionSix .divider .divideLine:last-child {
+    width: 2px;
+    height: 55px;
+    background: linear-gradient(180deg, #787878 0%, rgba(222, 222, 222, 0.06) 100%);
+    ;
+}
+
+.sectionSix .qr-div p {
+    font-weight: 400;
+    font-style: Regular;
+    font-size: 16px;
+    line-height: 100%;
+    color: rgba(42, 42, 42, 1);
+    white-space: nowrap;
+    margin-bottom: 4px;
+}
+
+.sectionSix .qr-div {
+    text-align: center;
+}
+
+.sectionSix .phones-img img {
+    width: 100%;
+    height: auto;
+}
+
+.sectionSix .sec-row {
+    display: flex;
+    justify-content: space-between;
+    gap: 56px;
+}
+
+@media(max-width:991px) {
+    .sectionSix .sec-row {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+@media(max-width:767px) {
+    .sectionSix .appDiv {
+        flex-direction: column;
+    }
+    .sectionSix .appDiv .appStores {
+        text-align: center;
+    }
+    .sectionSix .headings {
+        text-align: center;
+    }
+}
+
+
+/* Section Seven*/
+
+.sectionSeven .container {
+    margin-top: 80px;
+    background: rgba(88, 82, 255, 0.04);
+    border-radius: 32px;
+}
+
+.sectionSeven h6 {
+    font-weight: 400;
+    font-style: Regular;
+    font-size: 20px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    padding-top: 42px;
+    margin-bottom: 20px;
+}
+
+.sectionSeven h1 {
+    font-weight: 600;
+    font-style: SemiBold;
+    font-size: 48px;
+    line-height: 100%;
+    margin-bottom: 37px;
+}
+
+.sectionSeven h1 span {
+    color: #2c85de;
+}
+
+.sectionSeven .content a {
+    text-decoration: none;
+    color: rgba(255, 255, 255, 1);
+    background: linear-gradient(90deg, #83B2FF 0%, #3B82F6 100%);
+    padding: 10px 20px;
+    border-radius: 16px;
+    font-weight: 600;
+    font-style: SemiBold;
+    font-size: 15px;
+    line-height: 20px;
+    letter-spacing: 0%;
+}
+
+.sectionSeven .content {
+    padding-left: 105px;
+}
+
+.sectionSeven .person-img {
+    padding-top: 23px;
+    padding-right: 105px;
+}
+
+.sectionSeven .sec-row {
+    display: flex;
+    justify-content: space-between;
+}
+
+@media(max-width:991px) {
+    .sectionSeven .sec-row {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        gap: 20px;
+    }
+    .sectionSeven .person-img img {
+        width: 100%;
+        height: auto;
+        padding: 0px;
+    }
+    .sectionSeven .person-img {
+        padding: 0;
+    }
+}
+
+
+/*Footer CSS */
+
+.du-footer {
+    background-color: rgba(17, 24, 39, 1);
+    padding-top: 64px;
+    padding-bottom: 64px;
+    margin-top: 59px;
+}
+
+.du-footer .footer-container {
+    max-width: 1279px;
+    margin: 0 auto;
+}
+
+.du-footer .sec-one .col-one p {
+    font-family: Sora;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    color: rgba(156, 163, 175, 1);
+}
+
+.du-footer .socialIcons {
+    display: flex;
+    gap: 16px;
+}
+
+.du-footer .sec-one {
+    display: flex;
+    justify-content: space-between;
+    gap: 207px;
+}
+
+.du-footer ul li {
+    font-family: Sora;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    color: rgba(156, 163, 175, 1);
+    white-space: nowrap;
+    margin-bottom: 8px;
+}
+
+.du-footer ul {
+    list-style: none;
+    padding: 0px;
+    margin: 0px;
+}
+
+.du-footer ul li:first-child {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 28px;
+    color: rgba(255, 255, 255, 1);
+    margin-bottom: 16.64px;
+}
+
+.du-footer .sec-one .col-one img {
+    margin-bottom: 16.36px;
+}
+
+.du-footer .sec-one .col-one p {
+    margin-bottom: 15.64px;
+}
+
+.du-footer .sec-two .col-one {
+    font-family: Outfit;
+    font-weight: 400;
+    font-style: Regular;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 0%;
+    color: rgba(156, 163, 175, 1);
+    margin-top: 16px;
+}
+
+.du-footer .sec-two {
+    display: flex;
+    justify-content: space-between;
+    gap: 180px;
+}
+
+.du-footer .sec-two ul li:first-child {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 28px;
+    color: rgba(255, 255, 255, 1);
+    margin-bottom: 16.64px;
+    font-family: Outfit;
+    margin-top: 35px;
+}
+
+.du-footer .sec-two .col-two {
+    width: 1%;
+}
+
+.du-footer .sec-two .col-three {
+    width: 25%;
+    padding-right: 0px;
+    padding-left: 59px;
+}
