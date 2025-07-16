@@ -27,28 +27,28 @@ const Footer = () => {
               </div>
               <div className="col-two">
                 <ul>
-                    <li>Company</li>
-                    <li>About Us</li>
-                    <li>Careers</li>
-                    <li>Press</li>
-                    <li>Contact</li>
+                    <li><a href="">Company</a></li>
+                    <li><a href="">About Us</a></li>
+                    <li><a href="">Careers</a></li>
+                    <li><a href="">Press</a></li>
+                    <li><a href="">Contact</a></li>
                 </ul>
               </div>
               <div className="col-three">
                 <ul>
-                    <li>Popular Jobs</li>
-                    <li>Software Engineer</li>
-                    <li>Product Manager</li>
-                    <li>UI/UX Designer</li>
+                    <li><a href="">Popular Jobs</a></li>
+                    <li><a href="">Software Engineer</a></li>
+                    <li><a href="">Product Manager</a></li>
+                    <li><a href="">UI/UX Designer</a></li>
                 </ul>
               </div>
               <div className="col-four">
                  <ul>
-                    <li>Support</li>
-                    <li>Help Center</li>
-                    <li>Privacy Policy</li>
-                    <li>Terms of Service</li>
-                    <li>Cookie Policy</li>
+                    <li><a href="">Support</a></li>
+                    <li><a href="">Help Center</a></li>
+                    <li><a href="">Privacy Policy</a></li>
+                    <li><a href="">Terms of Service</a></li>
+                    <li><a href="">Cookie Policy</a></li>
                 </ul>
               </div>
             </div>
@@ -58,11 +58,11 @@ const Footer = () => {
                     </div>
                 <div className="col-two">
                 <ul>
-                    <li>Quick Links</li>
-                    <li>Terms</li>
-                    <li>Privacy</li>
-                    <li>Careers</li>
-                    <li>Contact Us</li>
+                    <li><a href="">Quick Links</a></li>
+                    <li><a href="">Terms</a></li>
+                    <li><a href="">Privacy</a></li>
+                    <li><a href="">Careers</a></li>
+                    <li><a href="">Contact Us</a></li>
                 </ul>
               
               </div>
@@ -73,7 +73,7 @@ const Footer = () => {
                     <li><img src={map} alt="" />Bengaluru, India</li>
                 </ul>
                 </div>
-                <div></div>
+                <div className="col-four"></div>
             </div>
           </div>
         </div>

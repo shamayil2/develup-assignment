@@ -1,5 +1,4 @@
-/* @import url('https://fonts.googleapis.com/css2?family=Sora:wght@100..800&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap'); */
+/*Importing Google Fonts Here */
 
 @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Sora:wght@100..800&display=swap');
@@ -33,10 +32,8 @@ body {
 
 .du-header a {
     font-weight: 600;
-    font-style: SemiBold;
     font-size: 15px;
     line-height: 20px;
-    letter-spacing: 0%;
     text-decoration: none;
     color: #2A2A2A
 }
@@ -56,7 +53,6 @@ body {
 
 .du-header .start {
     font-weight: 600;
-    font-style: SemiBold;
     font-size: 15px;
     line-height: 20px;
     letter-spacing: 0%;
@@ -86,9 +82,11 @@ body {
         flex-direction: column;
         display: flex;
         gap: 10px;
+        justify-content: center;
     }
     .du-header .header-search {
         margin-left: 12px;
+        width: 100%;
     }
     .du-header .navbar-text a {
         margin-left: 12px;
@@ -102,10 +100,10 @@ body {
     .du-header .navbar-toggler {
         margin-right: 12px;
     }
+    .du-header .navbar-collapse {
+        text-align: center;
+    }
 }
-
-
-/* Header CSS Ends Here */
 
 
 /* Banner CSS */
@@ -179,7 +177,6 @@ body {
 .du-banner .banner-one-main h4 {
     font-family: Sora;
     font-weight: 400;
-    font-style: Regular;
     font-size: 24px;
     line-height: 24px;
     letter-spacing: 0%;
@@ -235,9 +232,121 @@ body {
     flex: unset;
 }
 
+.du-banner .col-md-6.second-sec h6 {
+    font-family: Inter;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 24px;
+    color: rgba(44, 133, 222, 1);
+}
+
+.du-banner .col-md-6.second-sec p {
+    font-family: Inter;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+    color: rgba(44, 133, 222, 1);
+    margin: 0;
+}
+
 .du-banner .col-md-6.second-sec img {
     width: 100%;
     height: auto;
+    animation: fadeIn 0.8s ease-in forwards;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateX(50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0px);
+    }
+}
+
+@keyframes fadeSide {
+    from {
+        opacity: 0;
+        transform: translateX(-50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0px);
+    }
+}
+
+.du-banner .col-md-6.second-sec .firstBox {
+    background: linear-gradient(90deg, rgba(248, 250, 252, 0.1) 0%, rgba(101, 74, 253, 0.1) 100%);
+    backdrop-filter: blur(10px);
+    border-radius: 16px;
+    padding: 20px 40px;
+    display: inline-block;
+    position: absolute;
+    top: 0px;
+    right: 358px;
+    animation: fadeSide 0.8s ease-in forwards;
+}
+
+.du-banner .col-md-6.second-sec .firstBox p span {
+    color: rgba(99, 102, 241, 1);
+    margin-left: 32px;
+}
+
+.du-banner .col-md-6.second-sec .firstBox p:last-child span {
+    margin-left: 48px;
+}
+
+.du-banner .rowBanner {
+    position: relative;
+}
+
+.du-banner .secondBox {
+    background: linear-gradient(90deg, rgba(99, 102, 241, 0.062) 0%, rgba(0, 45, 245, 0.062) 100%);
+    backdrop-filter: blur(12.600000381469727px);
+    padding: 25px;
+    display: inline-block;
+    position: absolute;
+    bottom: 70px;
+    right: 300px;
+    border-radius: 16px;
+    animation: fadeSide 0.8s ease-in forwards;
+}
+
+.du-banner .secondBox p {
+    font-family: Inter;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+    letter-spacing: 0%;
+    color: rgba(44, 133, 222, 1);
+}
+
+.du-banner .secondBox h4 {
+    font-family: Inter;
+    font-weight: 700;
+    font-style: Bold;
+    font-size: 24px;
+    line-height: 32px;
+    color: rgba(44, 133, 222, 1);
+}
+
+@media(max-width:1226px) {
+    .du-banner a.findBtn {
+        padding: 10px 6px;
+        margin-left: 9px;
+        white-space: nowrap;
+    }
+}
+
+@media(max-width:1200px) {
+    .du-banner .col-md-6.second-sec .firstBox {
+        display: none;
+    }
+    .du-banner .secondBox {
+        display: none;
+    }
 }
 
 @media(max-width:991px) {
@@ -250,6 +359,12 @@ body {
     .du-banner .searchBar>div {
         display: flex;
         align-items: center;
+    }
+    .du-banner .firstBox {
+        display: none;
+    }
+    .du-banner .secondBox {
+        display: none;
     }
 }
 
@@ -281,6 +396,12 @@ body {
     }
     .du-banner .searchBar input {
         text-align: center;
+    }
+    .du-banner .second-sec .firstBox {
+        display: none;
+    }
+    .du-banner .second-sec .secondBox {
+        display: none;
     }
 }
 
@@ -342,13 +463,34 @@ body {
     color: rgba(99, 157, 251, 1);
 }
 
+.sectionOne .tagPara {
+    padding: 4px 8px;
+    border-radius: 24px;
+    display: inline;
+}
+
+.sectionOne .Popular .tagPara {
+    background-color: rgba(220, 252, 231, 1);
+    color: rgba(22, 101, 52, 1);
+}
+
+.sectionOne .New .tagPara {
+    color: rgba(30, 64, 175, 1);
+    background-color: rgba(219, 234, 254, 1);
+}
+
+.sectionOne .Beta .tagPara {
+    color: rgba(107, 33, 168, 1);
+    background-color: rgba(243, 232, 255, 1);
+}
+
 
 /* Section Two */
 
 .sectionTwo {
     font-family: Inter;
     background-color: rgba(248, 250, 252, 1);
-    padding: 60px 25px;
+    padding: 67px 25px 42px;
 }
 
 .sectionTwo .cardItem {
@@ -367,7 +509,6 @@ body {
     font-style: Bold;
     font-size: 48px;
     line-height: 48px;
-    letter-spacing: 0%;
     text-align: center;
     margin-bottom: 25px;
 }
@@ -375,7 +516,6 @@ body {
 .sectionTwo p {
     font-family: Sora;
     font-weight: 400;
-    font-style: Regular;
     font-size: 20px;
     line-height: 28px;
     letter-spacing: 0%;
@@ -474,6 +614,10 @@ body {
     margin: 0;
 }
 
+.sectionTwo .jobDetails p img {
+    margin-right: 4px;
+}
+
 .sectionTwo .jobBtn button {
     background: linear-gradient(90deg, #83B2FF 0%, #3B82F6 100%);
     border: 0;
@@ -485,7 +629,7 @@ body {
     line-height: 100%;
     letter-spacing: 0%;
     text-align: center;
-    padding: 12px 250px;
+    padding: 12px 200px;
     border-radius: 10px;
 }
 
@@ -501,7 +645,38 @@ body {
     font-size: 16px;
     line-height: 20px;
     letter-spacing: 0%;
-    margin-top: 20px;
+    margin-top: 40px;
+}
+
+.sectionTwo .browseJobs p {
+    margin: 0;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 20px;
+}
+
+.sectionTwo .browseJobs img {
+    margin-left: 8px;
+}
+
+.sectionTwo .row {
+    gap: 20px;
+    justify-content: center;
+}
+
+.sectionTwo .row .cardItem {
+    width: 45%;
+}
+
+.sectionTwo .row .cardItem .jobBtn {
+    text-align: center;
+    margin-top: 6px;
+}
+
+@media(max-width:1200px) {
+    .sectionTwo .jobBtn button {
+        padding: 12px 20px;
+    }
 }
 
 @media(max-width:767px) {
@@ -512,10 +687,24 @@ body {
     .sectionTwo .cardItem {
         margin-bottom: 20px;
     }
+    .sectionTwo .row {
+        flex-direction: column;
+        align-items: center;
+    }
+    .sectionTwo .row .cardItem {
+        width: 100%;
+    }
+    .sectionTwo .jobList li {
+        font-size: 12px;
+    }
 }
 
 
 /*Section Three */
+
+.sectionThree {
+    padding-top: 68px;
+}
 
 .sectionThree .sec-img img {
     width: 100%;
@@ -533,34 +722,29 @@ body {
     font-size: 36px;
     line-height: 40px;
     letter-spacing: 0%;
-    margin-bottom: 40px;
+    margin-bottom: 35px;
 }
 
 .sectionThree .sec3Content p {
     font-family: Sora;
     font-weight: 400;
-    font-style: Regular;
     font-size: 18px;
     line-height: 28px;
     letter-spacing: 0%;
     color: rgba(75, 85, 99, 1);
-    margin-bottom: 35px;
+    margin-bottom: 30px;
 }
 
 .sectionThree .sec3Content li {
-    font-family: Sora;
     font-weight: 400;
-    font-style: Regular;
     font-size: 16px;
     line-height: 24px;
-    letter-spacing: 0%;
     color: rgba(0, 0, 0, 1);
 }
 
 .sectionThree .sec3Content ul {
     padding: 0;
     list-style: none;
-    margin-bottom: 50px;
 }
 
 .sectionThree .sec3Content li img {
@@ -568,9 +752,7 @@ body {
 }
 
 .sectionThree .sec3Content a {
-    font-family: Sora;
     font-weight: 400;
-    font-style: Regular;
     font-size: 18px;
     line-height: 100%;
     letter-spacing: 0%;
@@ -580,6 +762,11 @@ body {
     border-radius: 8px;
     color: rgba(255, 255, 255, 1);
     padding: 16px 30px;
+}
+
+.sectionThree .sec3Content .features {
+    margin-bottom: 32px;
+    display: inline-block;
 }
 
 @media(max-width:767px) {
@@ -595,7 +782,7 @@ body {
 .sectionFour {
     background: linear-gradient(270deg, #DFF3FF 0%, #FCFBFF 100%);
     padding: 50px 0px;
-    margin-top: 90px;
+    margin-top: 94px;
 }
 
 .sectionFour h2 {
@@ -642,7 +829,6 @@ body {
     list-style: none;
     font-family: Sora;
     font-weight: 400;
-    font-style: Regular;
     font-size: 16px;
     line-height: 100%;
     letter-spacing: 0%;
@@ -664,10 +850,9 @@ body {
 .sectionFour .headline p {
     font-family: Sora;
     font-weight: 400;
-    font-style: Regular;
     font-size: 14px;
     line-height: 20px;
-    letter-spacing: 0%;
+    margin: 0;
 }
 
 .sectionFour .details h4 {
@@ -684,13 +869,12 @@ body {
 .sectionFour .details p {
     font-family: Sora;
     font-weight: 400;
-    font-style: Regular;
     font-size: 16px;
     line-height: 100%;
-    letter-spacing: 0%;
     color: rgba(141, 141, 141, 1);
     text-align: left;
     line-height: 1.6;
+    margin-bottom: 16px;
 }
 
 .sectionFour .features {
@@ -702,19 +886,21 @@ body {
 .sectionFour .features p {
     font-family: Sora;
     font-weight: 400;
-    font-style: Regular;
     font-size: 14px;
     line-height: 20px;
-    letter-spacing: 0%;
     text-align: left;
     color: rgba(156, 163, 175, 1);
+    margin-bottom: 16px;
+}
+
+.sectionFour .enrolBtn {
+    text-align: center;
 }
 
 .sectionFour .enrolBtn a {
     text-decoration: none;
     font-family: Sora;
     font-weight: 400;
-    font-style: Regular;
     font-size: 16px;
     line-height: 100%;
     letter-spacing: 0%;
@@ -729,13 +915,12 @@ body {
     background-color: rgba(255, 255, 255, 0.7);
     padding: 30px 20px;
     border-radius: 16px;
-    margin-bottom: 55px;
+    margin-bottom: 57px;
 }
 
 .sectionFour .viewCourses p {
     font-family: Sora;
     font-weight: 600;
-    font-style: SemiBold;
     font-size: 16px;
     line-height: 20px;
     letter-spacing: 0%;
@@ -745,6 +930,9 @@ body {
 @media(max-width:1200px) {
     .sectionFour .enrolBtn a {
         padding: 12px 27px;
+    }
+    .sectionFour .cardItem {
+        text-align: center;
     }
 }
 
@@ -764,19 +952,17 @@ body {
 .sectionFive {
     padding-top: 28px;
     background: linear-gradient(90deg, #F3F6FF 0%, #F9FAFF 100%);
-    padding-bottom: 37px;
+    padding-bottom: 28px;
     margin: 56px 0px;
 }
 
 .sectionFive h5 {
     font-weight: 400;
-    font-style: Regular;
     font-size: 20px;
     line-height: 100%;
-    letter-spacing: 0%;
     text-align: center;
     color: rgba(0, 0, 0, 1);
-    margin-bottom: 40px;
+    margin-bottom: 32px;
 }
 
 .sectionFive h5 span {
@@ -791,7 +977,6 @@ body {
 }
 
 .sectionFive .hiringOrgs img {
-    /* 3 per row with gap */
     height: auto;
     width: 100%;
 }
@@ -919,10 +1104,8 @@ body {
 
 .sectionSeven h6 {
     font-weight: 400;
-    font-style: Regular;
     font-size: 20px;
     line-height: 100%;
-    letter-spacing: 0%;
     padding-top: 42px;
     margin-bottom: 20px;
 }
@@ -981,6 +1164,10 @@ body {
     .sectionSeven .person-img {
         padding: 0;
     }
+    .sectionSeven .content {
+        text-align: center;
+        padding: 0;
+    }
 }
 
 
@@ -1017,6 +1204,17 @@ body {
     gap: 207px;
 }
 
+.du-footer ul li a {
+    font-family: Sora;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    color: rgba(156, 163, 175, 1);
+    white-space: nowrap;
+    margin-bottom: 8px;
+    text-decoration: none;
+}
+
 .du-footer ul li {
     font-family: Sora;
     font-weight: 400;
@@ -1033,7 +1231,7 @@ body {
     margin: 0px;
 }
 
-.du-footer ul li:first-child {
+.du-footer ul li:first-child a {
     font-weight: 400;
     font-size: 18px;
     line-height: 28px;
@@ -1058,12 +1256,25 @@ body {
     letter-spacing: 0%;
     color: rgba(156, 163, 175, 1);
     margin-top: 16px;
+    width: 23%;
+}
+
+.du-footer .sec-one .col-two {
+    width: 31%;
+}
+
+.du-footer .sec-one .col-three {
+    width: 31%;
+}
+
+.du-footer .sec-one .col-four {
+    width: 33%;
 }
 
 .du-footer .sec-two {
     display: flex;
     justify-content: space-between;
-    gap: 180px;
+    gap: 113px;
 }
 
 .du-footer .sec-two ul li:first-child {
@@ -1077,11 +1288,66 @@ body {
 }
 
 .du-footer .sec-two .col-two {
-    width: 1%;
+    width: 13%;
 }
 
 .du-footer .sec-two .col-three {
-    width: 25%;
-    padding-right: 0px;
-    padding-left: 59px;
+    width: 11%;
+    padding-left: 27px;
+}
+
+.du-footer .sec-two .col-four {
+    width: 18%;
+}
+
+.du-footer .sec-two .col-three li img {
+    margin-right: 8px;
+}
+
+@media(max-width:1200px) {
+    .du-footer .sec-one {
+        gap: 150px;
+    }
+}
+
+@media(max-width:991px) {
+    .du-footer .sec-one {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        gap: 10px;
+    }
+    .du-footer .sec-one .col-one {
+        text-align: center;
+    }
+    .du-footer .sec-one .socialIcons {
+        justify-content: center;
+    }
+    .du-footer .sec-two {
+        flex-direction: column;
+        gap: 10px;
+        align-items: center;
+    }
+    .du-footer .sec-two .col-one {
+        order: 3;
+        width: 100%;
+        text-align: center;
+    }
+    .du-footer .sec-two .col-two {
+        text-align: center;
+    }
+    .du-footer .sec-two .col-three {
+        text-align: center;
+        width: 100%;
+        padding: 0;
+    }
+    .du-footer .sec-two ul li:first-child {
+        margin-top: 7px;
+    }
+    .du-footer .sec-two .col-two {
+        width: 32%;
+    }
+    .du-footer .sec-one .col-three {
+        width: 39%;
+    }
 }

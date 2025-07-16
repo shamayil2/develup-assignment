@@ -16,8 +16,8 @@ const SectionThree = () => {
                     <div>
                         <p>Our AI-powered resume builder helps you create professional resumes that get noticed by employers. Choose from multiple templates and get instant feedback.</p>
                     </div>
-                    <div>
-                        <ul>
+                    <div className="features">
+                        <ul >
                             <li><img src={tickIcon} alt="" />Professional templates</li>
                             <li><img src={tickIcon} alt="" />AI-powered suggestions</li>
                             <li><img src={tickIcon} alt="" />ATS-friendly formats</li>

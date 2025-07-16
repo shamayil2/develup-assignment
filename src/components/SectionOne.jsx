@@ -58,7 +58,7 @@ const SectionOne = () => {
           <h1 className="heading">Built to Help You <span>Grow</span> </h1>
           <div className="row">
             {dataArr.map((item) => (
-              <div className="col-md-4 cardItem">
+              <div className={`col-md-4 cardItem ${item.tag}`}>
                 <img src={item.imgSrc} alt="" />
                 <h6>{item.title}</h6>
                 <p>{item.description}</p>
